@@ -1,0 +1,21 @@
+<form class="ui large form segment">
+  <h2 class="ui header" style="text-decoration: underline">Add a Link:</h2>
+
+  <div class="field">
+    <label for="title">Title</label>
+    <input name="title" placeholder="Title" id="title" #newtitle>
+  </div>
+  <div class="field">
+    <label for="link">Link</label>
+    <input name="link" placeholder="URL" id="link" #newlink>
+  </div>
+  <div class="ui right floated buttons">
+    <button (click)="newlink.value=''" (click)="newtitle.value=''" class="ui negative button">Abort</button>
+    <div class="or"></div>
+    <button (click)="addArticle(newtitle, newlink)" class="ui positive button">Submit Article</button>
+  </div>
+</form>
+
+<div class="ui grid posts">
+  <app-article *ngFor="let currentArticle of articles" [article]="currentArticle"></app-article>
+</div>
