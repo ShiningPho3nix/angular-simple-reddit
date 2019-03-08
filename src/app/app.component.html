@@ -9,10 +9,15 @@
     <label for="link">Link</label>
     <input name="link" placeholder="URL" id="link" #newlink>
   </div>
+  <div class="field">
+    <label for="description">Description</label>
+    <form class="ui form"><textarea placeholder="Describe the link a bit (Optional)" rows="3" id="desc"
+        #newDesc></textarea></form>
+  </div>
   <div class="ui right floated buttons">
     <button (click)="newlink.value=''" (click)="newtitle.value=''" class="ui negative button">Abort</button>
     <div class="or"></div>
-    <button (click)="addArticle(newtitle, newlink)" class="ui positive button">Submit Article</button>
+    <button (click)="addArticle(newtitle, newlink, newDesc)" class="ui positive button">Submit Article</button>
   </div>
 </form>
 

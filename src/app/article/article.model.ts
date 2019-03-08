@@ -2,10 +2,12 @@ export class Article {
   votes: number;
   title: string;
   link: string;
+  description: string;
 
-  constructor(title: string, link: string, votes?: number) {
+  constructor(title: string, link: string, description?: string, votes?: number) {
     this.votes = votes || 0;
     this.title = title
+    this.description = description;
     if (link.includes('http://')) {
       this.link = link;
     } else {

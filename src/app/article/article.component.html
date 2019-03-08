@@ -13,6 +13,9 @@
     {{article.title}}
   </a>
   <div class="meta">({{ article.domain() }})</div>
+  <div>
+    {{article.description}}
+  </div>
   <ul class="ui big horizontal list voters">
     <li class="item">
       <a href (click)="voteUp()">
