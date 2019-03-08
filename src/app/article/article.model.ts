@@ -6,7 +6,11 @@ export class Article {
   constructor(title: string, link: string, votes?: number) {
     this.votes = votes || 0;
     this.title = title
-    this.link = link;
+    if (link.includes('http://')) {
+      this.link = link;
+    } else {
+      this.link = 'http://'.concat(link);
+    }
   }
 
   voteUp(): void {
