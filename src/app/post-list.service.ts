@@ -29,7 +29,7 @@ export class PostListService {
 
   /**
    * Fügt einen neuen Artikel der Liste an Artikeln hinzu, sodass dieser ebenfalls weiter und ausgegeben wird.
-   * 
+   *
    * @param article Fügt den übergebenen Artikel der Liste an Artikeln hinzu.
    */
   addNewArticle(article: Article) {
