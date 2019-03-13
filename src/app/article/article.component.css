@@ -2,3 +2,10 @@
     height: 17px;
     width: 20px;
 }
+
+.voteArrow:hover {
+    position: relative;
+    color: #607D8B;
+    background-color: #DDD;
+    left: .01em;
+}
