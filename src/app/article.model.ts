@@ -6,7 +6,7 @@ export class Article {
 
   constructor(title: string, link: string, description?: string, votes?: number) {
     this.votes = votes || 0;
-    this.title = title
+    this.title = title;
     this.description = description;
     if (link.includes('http://')) {
       this.link = link;
