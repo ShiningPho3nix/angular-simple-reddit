@@ -1,4 +1,6 @@
 .voteArrow {
+    display: inline-block;
+    line-height: 1em;
     height: 17px;
     width: 20px;
 }

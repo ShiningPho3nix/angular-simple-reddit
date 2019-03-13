@@ -7,7 +7,10 @@ import { BehaviorSubject } from 'rxjs';
 })
 
 /**
- * Klasse ist ein Service, welcher die Initiale Liste der Article besitzt und diese and die ArticleListComponent weitergibt.
+ * Klasse ist ein Service, welcher die initiale Liste der Article besitzt und diese and die ArticleListComponent weitergibt.
+ *
+ * Alternativ könnte man eine Klasse dieser Art am obersten ende des Layout Trees haben und einen neuen Post "hochschicken",
+ * verarbeiten und runterschicken an articleList. Wäre vielleicht sogar die bessere alternative. Geht aber auch gut mit subscribe.
  */
 export class PostListService {
 
